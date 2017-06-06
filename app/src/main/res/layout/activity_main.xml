@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    tools:context="com.example.android.myjava.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@drawable/board"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+
+
+        <ImageView
+
+
+            android:id="@+id/imageView00"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="drop"
+            android:scaleType="fitCenter"
+            android:tag="0" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+
+            android:id="@+id/imageView01"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="1" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+
+            android:id="@+id/imageView02"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="2" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/imageView10"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="3" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/imageView11"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="4" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/imageView12"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="5" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+
+            android:id="@+id/imageView20"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="6" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/imageView21"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="7" />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:id="@+id/imageView22"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:scaleType="fitCenter"
+            android:onClick="drop"
+            android:tag="8" />
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/playagainlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/white"
+        android:onClick="playagain"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/winnertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No one won"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:onClick="playAgain"/>
+    </LinearLayout>
+
+</RelativeLayout>
